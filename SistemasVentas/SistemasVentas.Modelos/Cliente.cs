@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaVEntas.Modelos
+namespace SistemasVentas.Modelos
 {
-    internal class Cliente
+    public class Cliente
     {
         public int IdCliente { get; set; }
-        public string IdPersona { get; set; }
+        public int IdPersona { get; set; }
         public string TipoCliente { get; set; }
-        public string CodigoClie { get; set; }
+        public string CodigoCliente { get; set; }
         public string Estado { get; set; }
     }
 }

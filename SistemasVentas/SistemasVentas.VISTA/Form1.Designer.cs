@@ -1,4 +1,4 @@
-﻿namespace SistemaVEntas.VISTA
+﻿namespace SistemasVentas.VISTA
 {
     partial class Form1
     {

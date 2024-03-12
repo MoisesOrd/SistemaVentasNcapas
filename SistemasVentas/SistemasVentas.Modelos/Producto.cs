@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaVEntas.Modelos
+namespace SistemasVentas.Modelos
 {
-    internal class Producto
+    public class Producto
     {
         public int IdProducto { get; set; }
-        public string IdTipoProducto { get; set; }
+        public int IdTipoProducto { get; set; }
+        public int IdMarca { get; set; }
         public string Nombre { get; set; }
         public string CodigoBarra { get; set; }
-        public string IdMarca { get; set; }
-        public string Unidad { get; set; }
+        public int Unidad { get; set; }
         public string Descripcion { get; set; }
-        public string Estado { get; set;}
+        public string Estado { get; set; }
     }
 }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaVEntas.Modelos
+namespace SistemasVentas.Modelos
 {
-    internal class Usuario
+    public class Usuario
     {
         public int IdUsuario { get; set; }
-        public string IdPersona { get; set; }
+        public int IdPersona { get; set; }
         public string NombreUser { get; set; }
         public string Contraseña { get; set; }
         public DateTime FechaReg { get; set; }

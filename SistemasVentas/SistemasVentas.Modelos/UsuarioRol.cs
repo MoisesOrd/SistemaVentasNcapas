@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemaVEntas.Modelos
+namespace SistemasVentas.Modelos
 {
-    internal class usuarioRol
+    public class UsuarioRol
     {
-        public int IdUsuarioRol { get; set; }
-        public string IdUsuario { get; set; }
-        public string IdRol { get; set; }
+        public int IdUusarioRol { get; set; }
+        public int IdUsuario { get; set; }
+        public int IdRol { get; set; }
         public DateTime FechaAsigna { get; set; }
         public string Estado { get; set; }
     }
