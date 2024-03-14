@@ -11,7 +11,7 @@ namespace SistemasVentas.DAL
     {
         public DataTable ListarRolDal()
         {
-            string consulta = "select* from rol";
+            string consulta = "select * from rol";
             DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return Lista;
         }
