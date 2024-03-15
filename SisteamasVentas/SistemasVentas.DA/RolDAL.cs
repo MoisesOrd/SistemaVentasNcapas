@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Threading.Tasks;
+using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
@@ -15,5 +16,11 @@ namespace SistemasVentas.DAL
             DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return Lista;
         }
+        public void InsertarRolDal(Rol rol)
+        {
+            string consulta = "insert into TipoProd values('" + rol.Nombre + "'," + "'Activo')";
+            conexion.Ejecutar(consulta);
+        }
+
     }
 }

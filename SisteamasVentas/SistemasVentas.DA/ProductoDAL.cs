@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemasVentas.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -15,5 +16,12 @@ namespace SistemasVentas.DAL
             DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return Lista;
         }
+        public void InsertarProductoDal(Producto producto)
+        {
+            string consulta = "insert into Producto values('" + producto.IdTipoProd + "','" + producto.IdMarca + "','" + producto.Nombre + "','" + producto.CodigoBarra +"','" +producto.Unidad +"','"+ producto.Descripcion + "','Activo')";
+            
+            conexion.Ejecutar(consulta);
+        }
+
     }
 }
