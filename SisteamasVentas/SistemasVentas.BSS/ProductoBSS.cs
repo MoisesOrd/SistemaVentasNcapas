@@ -16,10 +16,9 @@ namespace SistemasVentas.BSS
         {
             return dal.ListarProductoDal();
         }
-        public void InsertarProducto(Producto producto)
+        public void InsertarProductoBss(Producto producto)
         {
-            dal.InsertarProductoDal(producto);
+            dal.InsertarProductoDAL(producto);
         }
-
     }
 }

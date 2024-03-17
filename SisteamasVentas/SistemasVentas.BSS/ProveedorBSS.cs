@@ -16,9 +16,9 @@ namespace SistemasVentas.BSS
         {
             return dal.ListarProveedorDal();
         }
-        public void InsertarProveedor(Proveedor proveedor)
+        public void InsertarProveedorBss(Proveedor proveedor)
         {
-            dal.InsertarProveedorDal(proveedor);
+            dal.InsertarProveedorDAL(proveedor);
         }
     }
 }

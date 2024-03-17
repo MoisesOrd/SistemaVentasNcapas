@@ -16,9 +16,10 @@ namespace SistemasVentas.BSS
         {
             return dal.ListarClienteDal();
         }
-        public void InsertarCliente(Cliente cliente)
+
+        public void InsertarClienteBss(Cliente cliente)
         {
-            dal.InsertarClienteDal(cliente);
+            dal.InsertarClienteDAL(cliente);
         }
     }
 }

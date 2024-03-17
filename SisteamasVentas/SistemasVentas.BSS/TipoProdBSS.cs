@@ -16,9 +16,9 @@ namespace SistemasVentas.BSS
         {
             return dal.ListarTipoProdDal();
         }
-        public void InsertarTipoProd(TipoProd tipoProd)
+        public void InsertarTipoProdBss(TipoProd tipoprod)
         {
-            dal.InsertarTipoProdDal(tipoProd);
+            dal.InsertarTipoProdDAL(tipoprod);
         }
     }
 }

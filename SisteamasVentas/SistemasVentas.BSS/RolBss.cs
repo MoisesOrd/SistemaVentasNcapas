@@ -16,9 +16,10 @@ namespace SistemasVentas.BSS
         {
             return dal.ListarRolDal();
         }
-        public void InsertarRol(Rol rol)
+
+        public void InsertarRolBss(Rol rol)
         {
-            dal.InsertarRolDal(rol);
+            dal.InsertarRolDAL(rol);
         }
     }
 }

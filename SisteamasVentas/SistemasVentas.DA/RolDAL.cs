@@ -16,11 +16,11 @@ namespace SistemasVentas.DAL
             DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return Lista;
         }
-        public void InsertarRolDal(Rol rol)
+        public void InsertarRolDAL(Rol rol)
         {
-            string consulta = "insert into TipoProd values('" + rol.Nombre + "'," + "'Activo')";
+            string consulta = "insert into rol values('" + rol.Nombre + "'," +
+                                                          "'Activo')";
             conexion.Ejecutar(consulta);
         }
-
     }
 }

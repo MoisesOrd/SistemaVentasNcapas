@@ -22,5 +22,10 @@ namespace SistemasVentas.VISTA.PersonaVistas
         {
             dataGridView1.DataSource = bss.ListarPersonaBss();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

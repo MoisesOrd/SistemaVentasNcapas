@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,9 +16,10 @@ namespace SistemasVentas.DAL
             DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return Lista;
         }
-        public void InsertarMarcaDal(Marca marca) 
+        public void InsertarMarcaDAL(Marca marca)
         {
-            string consulta = "insert into Marca Values('" + marca.Nombre + "',"+"'Activo')";
+            string consulta = "insert into marca values('" + marca.Nombre + "'," +
+                                                          "'Activo')";
             conexion.Ejecutar(consulta);
         }
     }

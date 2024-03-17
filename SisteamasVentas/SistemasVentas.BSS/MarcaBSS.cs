@@ -18,7 +18,7 @@ namespace SistemasVentas.BSS
         }
         public void InsertarMarcaBss(Marca marca)
         {
-            dal.InsertarMarcaDal(marca);
+            dal.InsertarMarcaDAL(marca);
         }
     }
 }

@@ -13,4 +13,10 @@
     <ProjectReference Include="..\SistemasVentas.Modelos\SistemasVentas.Modelos.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="PersonaVistas\UsuarioVista\UsuarioInsertarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
