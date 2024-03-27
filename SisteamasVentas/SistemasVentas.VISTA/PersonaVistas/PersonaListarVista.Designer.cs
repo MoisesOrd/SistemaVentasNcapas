@@ -49,11 +49,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(552, 604);
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Location = new System.Drawing.Point(497, 605);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.Size = new System.Drawing.Size(191, 29);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Select";
+            this.button1.Text = "Seleccionar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

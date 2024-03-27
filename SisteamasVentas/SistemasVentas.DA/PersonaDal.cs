@@ -27,6 +27,7 @@ namespace SistemasVentas.DAL
             conexion.Ejecutar(consulta);
         }
 
+
         public Persona ObtenerPersonaId(int id)
         {
             string consulta = "select * from persona where idpersona=" + id;
@@ -43,7 +44,23 @@ namespace SistemasVentas.DAL
                 p.Estado = tabla.Rows[0]["estado"].ToString();
             }
             return p;
+        }
 
+        public void EditarPersonaDal(Persona persona)
+        {
+            string consulta = "update persona set nombre='" + persona.Nombre + "'," +
+                                                        "apellido='" + persona.Apellido + "'," +
+                                                        "telefono='" + persona.Telefono + "'," +
+                                                        "ci='" + persona.CI + "'," +
+                                                        "correo='" + persona.Correo + "' " +
+                                                        "where idpersona=" + persona.IdPersona;
+            conexion.Ejecutar(consulta);
+        }
+
+        public void EliminarPersonaDal(int id)
+        {
+            string consulta = "delete from persona where idpersona=" + id;
+            conexion.Ejecutar(consulta);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SistemasVentas.VISTA.UsuarioVistas
 {
-    partial class UsuarioInsertarVista
+    partial class UsuarioInsertarVistas
     {
         /// <summary>
         /// Required designer variable.

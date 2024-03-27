@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.BSS;
+using SistemasVentas.Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace SistemasVentas.VISTA.UsuarioVistas
 {
     public partial class UsuarioListarVistas : Form
     {
+
         public UsuarioListarVistas()
         {
             InitializeComponent();

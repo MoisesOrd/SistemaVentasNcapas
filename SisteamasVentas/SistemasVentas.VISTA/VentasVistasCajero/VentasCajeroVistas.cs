@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemasVentas.VISTA.RolVistas
+namespace SistemasVentas.VISTA.VentasVistasCajero
 {
-    public partial class InsertarRolVistas : Form
+    public partial class VentasCajeroVistas : Form
     {
-        public InsertarRolVistas()
+        public VentasCajeroVistas()
         {
             InitializeComponent();
         }

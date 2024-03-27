@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace SistemasVentas.VISTA.ProveedorVistas
 {
-    public partial class InsertarProveedorVistas : Form
+    public partial class ProveedorInsertarVista : Form
     {
-        public InsertarProveedorVistas()
+        public ProveedorInsertarVista()
         {
             InitializeComponent();
         }
@@ -22,11 +22,12 @@ namespace SistemasVentas.VISTA.ProveedorVistas
         private void button1_Click(object sender, EventArgs e)
         {
             Proveedor p = new Proveedor();
-            p.Nombre = textBox2.Text;
-            p.Telefono = textBox3.Text;
-            p.Direccion = textBox4.Text;
-            bss.InsertarProveedor(p);
-            MessageBox.Show("El cliente se guardo correctamente");
+            p.Nombre=textBox1.Text;
+            p.Telefono= textBox2.Text;
+            p.Direccion = textBox3.Text;
+
+            bss.InsertarProveedorBss(p);
+            MessageBox.Show("Se guardo correctamente El Proveedor");
         }
     }
 }

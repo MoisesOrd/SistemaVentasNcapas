@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace SistemasVentas.VISTA.UsuarioVistas
 {
-    public partial class UsuarioInsertarVista : Form
+    public partial class UsuarioInsertarVistas : Form
     {
-        public UsuarioInsertarVista()
+        public UsuarioInsertarVistas()
         {
             InitializeComponent();
         }
@@ -48,5 +48,7 @@ namespace SistemasVentas.VISTA.UsuarioVistas
                 textBox1.Text = p.Nombre + " " + p.Apellido;
             }
         }
+
+       
     }
 }

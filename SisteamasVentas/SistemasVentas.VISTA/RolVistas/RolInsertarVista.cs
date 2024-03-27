@@ -10,22 +10,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemasVentas.VISTA.TipoProdVistas
+namespace SistemasVentas.VISTA.RolVistas
 {
-    public partial class InsertarTipoProdVistas : Form
+    public partial class RolInsertarVista : Form
     {
-        public InsertarTipoProdVistas()
+        public RolInsertarVista()
         {
             InitializeComponent();
         }
-        TipoProdBSS bss = new TipoProdBSS();
+        RolBss bss = new RolBss();
         private void button1_Click(object sender, EventArgs e)
         {
+            Rol r = new Rol();
+            r.Nombre= textBox1.Text;
 
-            TipoProd Tp = new TipoProd();
-            Tp.Nombre = textBox1.Text;
-            bss.InsertarTipoProd(Tp);
-            MessageBox.Show("El cliente se guardo correctamente");
+            bss.InsertarRolBss(r);
+            MessageBox.Show("Se guardo correctamente El Rol");
         }
     }
 }
