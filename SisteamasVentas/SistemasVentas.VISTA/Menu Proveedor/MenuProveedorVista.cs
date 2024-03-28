@@ -18,7 +18,7 @@ namespace SistemasVentas.VISTA.Menu_Proveedor
             InitializeComponent();
         }
         ProveedorBSS bss = new ProveedorBSS();
-        private void ProveedorListarVista_Load(object sender, EventArgs e)
+        private void MenuProveedorVista_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = bss.ListarProveedorBss();
         }

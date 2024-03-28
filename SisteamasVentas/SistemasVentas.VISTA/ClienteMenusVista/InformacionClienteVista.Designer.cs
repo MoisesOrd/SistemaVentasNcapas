@@ -104,6 +104,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "InformacionClienteVista";
             this.Text = "InformacionClienteVista";
+            this.Load += new System.EventHandler(this.InformacionClienteVista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

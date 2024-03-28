@@ -117,6 +117,7 @@
             this.Controls.Add(this.button1);
             this.Name = "MenuProveedorVista";
             this.Text = "MenuProveedorVista";
+            this.Load += new System.EventHandler(this.MenuProveedorVista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
