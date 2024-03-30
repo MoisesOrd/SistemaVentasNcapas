@@ -13,6 +13,8 @@ namespace SistemasVentas.DAL
 
         public static string CONECTAR
         {
+            //PCA-03
+            //DESKTOP-JDKQ9F6\SQLEXPRESS
             get { return @"Data Source=DESKTOP-D4M7M9J; Initial Catalog=TIENDABD; Integrated Security=True; TrustServerCertificate=true;"; }
             //get { return ConfigurationManager.ConnectionStrings["cadena"].ToString(); }
         }
@@ -27,21 +29,6 @@ namespace SistemasVentas.DAL
             DataSet ds = new DataSet();
             da.Fill(ds, "TABLA");
             return ds;
-        }
-        public static bool VerificarCredenciales(string usuario, string contraseña)
-        {
-            string consulta = "SELECT COUNT(1) FROM usuario WHERE nombreuser = @Usuario AND contraseña = @Contraseña";
-
-            using (SqlConnection conectar = new SqlConnection(CONECTAR))
-            {
-                conectar.Open();
-                SqlCommand cmd = new SqlCommand(consulta, conectar);
-                cmd.Parameters.AddWithValue("@Usuario", usuario);
-                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
-
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-                return count == 1;
-            }
         }
 
         public static void Ejecutar(string consulta)
@@ -75,6 +62,67 @@ namespace SistemasVentas.DAL
             da.Fill(dt);
             return dt;
         }
+        public static bool VerificarCredenciales(string usuario, string contraseña)
+        {
+            string consulta = "SELECT COUNT(1) FROM Usuario AS U " +
+                              "INNER JOIN UsuarioRol AS UR ON U.IDUsuario = UR.IDUsuario " +
+                              "WHERE U.NombreUser = @Usuario AND U.Contraseña = @Contraseña " +
+                              "AND UR.IDRol = 1";
 
+            using (SqlConnection conectar = new SqlConnection(CONECTAR))
+            {
+                conectar.Open();
+                SqlCommand cmd = new SqlCommand(consulta, conectar);
+                cmd.Parameters.AddWithValue("@Usuario", usuario);
+                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                return count == 1;
+            }
+
+
+        }
+
+        public static bool VerificarCredenciales2(string usuario, string contraseña)
+        {
+            string consulta = "SELECT COUNT(1) FROM Usuario AS U " +
+                              "INNER JOIN UsuarioRol AS UR ON U.IDUsuario = UR.IDUsuario " +
+                              "WHERE U.NombreUser = @Usuario AND U.Contraseña = @Contraseña " +
+                              "AND UR.IDRol = 2";
+
+            using (SqlConnection conectar = new SqlConnection(CONECTAR))
+            {
+                conectar.Open();
+                SqlCommand cmd = new SqlCommand(consulta, conectar);
+                cmd.Parameters.AddWithValue("@Usuario", usuario);
+                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                return count == 1;
+            }
+
+
+        }
+
+        public static bool VerificarCredenciales3(string usuario, string contraseña)
+        {
+            string consulta = "SELECT COUNT(1) FROM Usuario AS U " +
+                              "INNER JOIN UsuarioRol AS UR ON U.IDUsuario = UR.IDUsuario " +
+                              "WHERE U.NombreUser = @Usuario AND U.Contraseña = @Contraseña " +
+                              "AND UR.IDRol = 4";
+
+            using (SqlConnection conectar = new SqlConnection(CONECTAR))
+            {
+                conectar.Open();
+                SqlCommand cmd = new SqlCommand(consulta, conectar);
+                cmd.Parameters.AddWithValue("@Usuario", usuario);
+                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                return count == 1;
+            }
+
+
+        }
     }
 }

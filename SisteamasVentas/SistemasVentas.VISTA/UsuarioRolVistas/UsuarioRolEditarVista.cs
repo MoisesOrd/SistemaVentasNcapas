@@ -32,10 +32,10 @@ namespace SistemasVentas.VISTA.UsuarioRolVistas
 
         private void UsuarioRolEditarVista_Load(object sender, EventArgs e)
         {
-            //r = bss.ObtenerUsuarioRolIdBss(idx);
-            //textBox1.Text = r.IdUsuario.ToString();
-            //textBox2.Text = r.IdRol.ToString();
-            //dateTimePicker1.Value = r.FechaAsigna;
+            r = bss.ObtenerUsuarioRolIdBss(idx);
+            textBox1.Text = r.IdUsuario.ToString();
+            textBox2.Text = r.IdRol.ToString();
+            dateTimePicker1.Value = r.FechaAsigna;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -60,11 +60,11 @@ namespace SistemasVentas.VISTA.UsuarioRolVistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //r.IdUsuario = IdUsuarioSeleccionada;
-            //r.IdRol = IdRolSeleccionada;
-            //r.FechaAsigna = dateTimePicker1.Value;
-            //bss.EditarUsuarioRolBss(r);
-            //MessageBox.Show("Datos Actualizados");
+            r.IdUsuario = IdUsuarioSeleccionada;
+            r.IdRol = IdRolSeleccionada;
+            r.FechaAsigna = dateTimePicker1.Value;
+            bss.EditarUsuarioRolBss(r);
+            MessageBox.Show("Datos Actualizados");
         }
     }
 }

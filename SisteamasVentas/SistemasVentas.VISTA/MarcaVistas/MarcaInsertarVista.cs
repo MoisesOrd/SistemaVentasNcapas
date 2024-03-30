@@ -18,21 +18,14 @@ namespace SistemasVentas.VISTA.MarcaVistas
         {
             InitializeComponent();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
         MarcaBSS bss = new MarcaBSS();
-
-        
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Marca m = new Marca();
-            m.Nombre = textBox2.Text;
+            m.Nombre = textBox1.Text;
+
             bss.InsertarMarcaBss(m);
-            MessageBox.Show("Se guardo correctamente");
+            MessageBox.Show("Se guardo correctamente la marca");
         }
     }
 }

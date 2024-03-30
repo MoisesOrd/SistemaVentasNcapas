@@ -20,6 +20,7 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarUsuarioDal(usuario);
         }
+
         public Usuario ObtenerUsuarioIdBss(int id)
         {
             return dal.ObtenerUsuarioIdDal(id);
@@ -35,5 +36,9 @@ namespace SistemasVentas.BSS
             dal.EliminarUsuarioDal(id);
         }
 
+        public DataTable UsuarioDatosBSS() 
+        { 
+            return dal.UsuarioDatosDal();
+        }
     }
 }

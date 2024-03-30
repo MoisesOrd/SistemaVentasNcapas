@@ -43,7 +43,7 @@ namespace SistemasVentas.VISTA.UsuarioVistas
             textBox1.Text = u.IdPersona.ToString();
             textBox2.Text = u.NombreUser;
             textBox3.Text = u.Contraseña;
-            dateTimePicker1.Value = Convert.ToDateTime(u.FechaReg);
+            dateTimePicker1.Value = u.FechaReg;
         }
 
         private void button1_Click(object sender, EventArgs e)

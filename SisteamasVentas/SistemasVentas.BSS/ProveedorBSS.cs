@@ -34,5 +34,10 @@ namespace SistemasVentas.BSS
         {
             dal.EliminarProveedorDal(id);
         }
+        public DataTable ProveedorDatosBSS()
+        {
+            return dal.ProveedorDatosDal();
+        }
+
     }
 }

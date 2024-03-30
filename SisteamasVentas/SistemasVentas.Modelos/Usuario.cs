@@ -8,7 +8,7 @@ namespace SistemasVentas.Modelos
 {
     public class Usuario
     {
-        public int IdUsusario { get; set; }
+        public int IdUsuario { get; set; }
         public int IdPersona { get; set; }
         public string NombreUser { get; set; }
         public string Contraseña { get; set; }

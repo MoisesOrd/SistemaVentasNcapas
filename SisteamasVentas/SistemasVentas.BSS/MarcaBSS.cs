@@ -20,6 +20,7 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarMarcaDAL(marca);
         }
+
         public Marca ObtenerMarcaIdBss(int id)
         {
             return dal.ObtenerMarcaIdDal(id);
@@ -33,6 +34,11 @@ namespace SistemasVentas.BSS
         public void EliminarMarcaBss(int id)
         {
             dal.EliminarMarcaDal(id);
+        }
+
+        public DataTable MarcaDatosBSS()
+        {
+            return dal.MarcaDatosDal();
         }
     }
 }

@@ -24,6 +24,7 @@ namespace SistemasVentas.DAL
                                                           "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public Cliente ObtenerClienteIdDal(int id)
         {
             string consulta = "select * from cliente where idcliente=" + id;
@@ -52,6 +53,16 @@ namespace SistemasVentas.DAL
         {
             string consulta = "delete from cliente where idcliente=" + id;
             conexion.Ejecutar(consulta);
+        }
+
+        public DataTable ClienteDatosDal()
+        {
+            string consulta = " SELECT CLIENTE.TIPOCLIENTE, CLIENTE.CODIGOCLIENTE, (PERSONA.NOMBRE+' ' +PERSONA.APELLIDO) NOMBRECOMPLETO " +
+                               " FROM CLIENTE INNER JOIN" +
+                               " PERSONA ON CLIENTE.IDPERSONA = PERSONA.IDPERSONA";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
         }
     }
 }

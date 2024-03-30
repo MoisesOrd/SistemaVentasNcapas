@@ -25,6 +25,7 @@ namespace SistemasVentas.DAL
                                                             "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public Proveedor ObtenerProveedorIdDal(int id)
         {
             string consulta = "select * from proveedor where idproveedor=" + id;
@@ -56,5 +57,16 @@ namespace SistemasVentas.DAL
             string consulta = "delete from proveedor where idproveedor=" + id;
             conexion.Ejecutar(consulta);
         }
+        public DataTable ProveedorDatosDal()
+        {
+            string consulta = " SELECT        PROVEEDOR.NOMBRE, PROVEEDOR.TELEFONO, PROVEE.PRECIO, PRODUCTO.NOMBRE AS Expr1" +
+                               " FROM            PROVEEDOR INNER JOIN " +
+                               " PROVEE ON PROVEEDOR.IDPROVEEDOR = PROVEE.IDPROVEEDOR INNER JOIN" +
+                               "  PRODUCTO ON PROVEE.IDPRODUCTO = PRODUCTO.IDPRODUCTO";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+
     }
 }

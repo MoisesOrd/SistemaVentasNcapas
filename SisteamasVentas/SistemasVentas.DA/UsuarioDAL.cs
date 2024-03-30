@@ -24,6 +24,7 @@ namespace SistemasVentas.DAL
                                                             " '" + usuario.FechaReg + "')";
             conexion.Ejecutar(consulta);
         }
+
         public Usuario ObtenerUsuarioIdDal(int id)
         {
             string consulta = "select * from usuario where idusuario=" + id;
@@ -31,7 +32,7 @@ namespace SistemasVentas.DAL
             Usuario u = new Usuario();
             if (tabla.Rows.Count > 0)
             {
-                u.IdUsusario = Convert.ToInt32(tabla.Rows[0]["idusuario"]);
+                u.IdUsuario = Convert.ToInt32(tabla.Rows[0]["idusuario"]);
                 u.NombreUser = tabla.Rows[0]["nombreuser"].ToString();
                 u.Contraseña = tabla.Rows[0]["contraseña"].ToString();
                 u.FechaReg = Convert.ToDateTime(tabla.Rows[0]["fechareg"]);
@@ -45,7 +46,7 @@ namespace SistemasVentas.DAL
                                                                    "nombreuser='" + usuario.NombreUser + "'," +
                                                                    "contraseña='" + usuario.Contraseña + "'," +
                                                                    "fechareg='" + usuario.FechaReg + "' " +
-                                                           "where idusuario=" + usuario.IdUsusario;
+                                                           "where idusuario=" + usuario.IdUsuario;
             conexion.Ejecutar(consulta);
         }
 
@@ -54,5 +55,18 @@ namespace SistemasVentas.DAL
             string consulta = "delete from usuario where idusuario=" + id;
             conexion.Ejecutar(consulta);
         }
-    }
+
+        public DataTable UsuarioDatosDal()
+        {
+            string consulta = " SELECT USUARIO.IDUSUARIO, (PERSONA.NOMBRE+' ' +PERSONA.APELLIDO) NOMBRECOMPLETO ,USUARIO.NOMBREUSER, " +
+                               " ROL.NOMBRE AS Expr1, USUARIOROL.FECHAASIGNA " +
+                               " FROM PERSONA INNER JOIN" +
+                               " USUARIO ON PERSONA.IDPERSONA = USUARIO.IDPERSONA INNER JOIN" +
+                               " USUARIOROL ON USUARIO.IDUSUARIO = USUARIOROL.IDUSUARIO INNER JOIN" +
+                               " ROL ON USUARIOROL.IDROL = ROL.IDROL";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+     }
 }

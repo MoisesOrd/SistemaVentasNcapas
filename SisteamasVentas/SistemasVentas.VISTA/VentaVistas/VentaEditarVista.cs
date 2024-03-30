@@ -55,7 +55,7 @@ namespace SistemasVentas.VISTA.VentaVistas
             if (fr.ShowDialog() == DialogResult.OK)
             {
                 Usuario usuario = bssven.ObtenerUsuarioIdBss(IdVendedorSeleccionada);
-                textBox2.Text = usuario.IdUsusario.ToString();
+                textBox2.Text = usuario.IdUsuario.ToString();
             }
         }
 

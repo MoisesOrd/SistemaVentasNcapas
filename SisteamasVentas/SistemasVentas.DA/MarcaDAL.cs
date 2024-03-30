@@ -22,6 +22,7 @@ namespace SistemasVentas.DAL
                                                           "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public Marca ObtenerMarcaIdDal(int id)
         {
             string consulta = "select * from marca where idmarca=" + id;
@@ -48,5 +49,16 @@ namespace SistemasVentas.DAL
             string consulta = "delete from marca where idmarca=" + id;
             conexion.Ejecutar(consulta);
         }
+
+        public DataTable MarcaDatosDal()
+        {
+            string consulta = " SELECT MARCA.NOMBRE, PRODUCTO.NOMBRE AS Expr1, PRODUCTO.CODIGOBARRA, PRODUCTO.UNIDAD" +
+                               " FROM MARCA INNER JOIN " +
+                               " PRODUCTO ON MARCA.IDMARCA = PRODUCTO.IDMARCA ";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+
     }
 }

@@ -21,6 +21,7 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarRolDAL(rol);
         }
+
         public Rol ObtenerRolIdBss(int id)
         {
             return dal.ObtenerRolIdDal(id);
@@ -35,5 +36,11 @@ namespace SistemasVentas.BSS
         {
             dal.EliminarRolDal(id);
         }
+
+        public DataTable RolDatosBSS()
+        {
+            return dal.RolDatosDal();
+        }
+
     }
 }

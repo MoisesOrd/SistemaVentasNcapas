@@ -27,15 +27,14 @@ namespace SistemasVentas.DAL
             conexion.Ejecutar(consulta);
         }
 
-
-        public Persona ObtenerPersonaId(int id)
+        public Persona ObtenerPersonaIdDal(int id)
         {
             string consulta = "select * from persona where idpersona=" + id;
             DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
             Persona p = new Persona();
             if (tabla.Rows.Count > 0)
             {
-                p.IdPersona = Convert.ToInt32(tabla.Rows[0]["Idpersona"]);
+                p.IdPersona = Convert.ToInt32(tabla.Rows[0]["idpersona"]);
                 p.Nombre = tabla.Rows[0]["nombre"].ToString();
                 p.Apellido = tabla.Rows[0]["apellido"].ToString();
                 p.Telefono = tabla.Rows[0]["telefono"].ToString();
@@ -44,9 +43,10 @@ namespace SistemasVentas.DAL
                 p.Estado = tabla.Rows[0]["estado"].ToString();
             }
             return p;
+
         }
 
-        public void EditarPersonaDal(Persona persona)
+        public void EditarPersonaDal(Persona persona) 
         {
             string consulta = "update persona set nombre='" + persona.Nombre + "'," +
                                                         "apellido='" + persona.Apellido + "'," +
@@ -61,6 +61,18 @@ namespace SistemasVentas.DAL
         {
             string consulta = "delete from persona where idpersona=" + id;
             conexion.Ejecutar(consulta);
+        }
+
+        public DataTable PersonaDatosDal()
+        {
+            string consulta = " SELECT PERSONA.IDPERSONA,(PERSONA.NOMBRE+' ' +PERSONA.APELLIDO) NOMBRECOMPLETO,  " +
+                               " USUARIO.NOMBREUSER, USUARIO.CONTRASEÑA " +
+                               " FROM PERSONA INNER JOIN" +
+                               " USUARIO ON PERSONA.IDPERSONA = USUARIO.IDPERSONA";
+                               
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
         }
     }
 }

@@ -21,6 +21,7 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarVentaDAL(venta);
         }
+
         public Venta ObtenerVentaIdBss(int id)
         {
             return dal.ObtenerVentaIdDal(id);
@@ -32,6 +33,11 @@ namespace SistemasVentas.BSS
         public void EliminarVentaBss(int id)
         {
             dal.EliminarVentaDal(id);
+        }
+
+        public DataTable VentaDatosBSS()
+        {
+            return dal.VentaDatosDal();
         }
     }
 }

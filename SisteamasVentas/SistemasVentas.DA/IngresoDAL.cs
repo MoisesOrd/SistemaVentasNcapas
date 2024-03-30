@@ -25,6 +25,7 @@ namespace SistemasVentas.DAL
                                                           "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public Ingreso ObtenerIngresoIdDal(int id)
         {
             string consulta = "select * from ingreso where idingreso=" + id;
@@ -55,5 +56,17 @@ namespace SistemasVentas.DAL
             string consulta = "delete from ingreso where idingreso=" + id;
             conexion.Ejecutar(consulta);
         }
+
+        public DataTable IngresoDatosDal()
+        {
+            string consulta = " SELECT PROVEEDOR.NOMBRE, PROVEEDOR.TELEFONO, INGRESO.FECHAINGRESO, INGRESO.TOTAL" +
+                               " FROM INGRESO INNER JOIN " +
+                               " PROVEEDOR ON INGRESO.IDPROVEEDOR = PROVEEDOR.IDPROVEEDOR";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+
+
     }
 }

@@ -22,11 +22,12 @@ namespace SistemasVentas.DAL
                                                           "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public Rol ObtenerRolIdDal(int id)
         {
             string consulta = "select * from rol where idrol=" + id;
             DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            Rol r = new Rol();
+            Rol r=new Rol();
             if (tabla.Rows.Count > 0)
             {
                 r.IdRol = Convert.ToInt32(tabla.Rows[0]["idrol"]);
@@ -48,6 +49,16 @@ namespace SistemasVentas.DAL
         {
             string consulta = "delete from rol where idrol=" + id;
             conexion.Ejecutar(consulta);
+        }
+
+        public DataTable RolDatosDal()
+        {
+            string consulta = " SELECT (ROL.NOMBRE) ROL, USUARIO.NOMBREUSER, USUARIO.CONTRASEÑA " +
+                               " FROM ROL CROSS JOIN" +
+                               " USUARIO";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
         }
     }
 }

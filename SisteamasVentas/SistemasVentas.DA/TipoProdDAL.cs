@@ -22,11 +22,12 @@ namespace SistemasVentas.DAL
                                                           "'Activo')";
             conexion.Ejecutar(consulta);
         }
+
         public TipoProd ObtenerTipoProdIdDal(int id)
         {
             string consulta = "select * from tipoprod where idtipoprod=" + id;
             DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            TipoProd t = new TipoProd();
+            TipoProd t= new TipoProd();
             if (tabla.Rows.Count > 0)
             {
                 t.IdTipoProd = Convert.ToInt32(tabla.Rows[0]["idtipoprod"]);
@@ -51,5 +52,15 @@ namespace SistemasVentas.DAL
             conexion.Ejecutar(consulta);
         }
 
+        public DataTable TipoProdDatosDal()
+        {
+            string consulta = " SELECT TIPOPROD.NOMBRE, PRODUCTO.NOMBRE AS Expr1, PRODUCTO.CODIGOBARRA, MARCA.NOMBRE AS Expr2, PRODUCTO.UNIDAD, PRODUCTO.DESCRIPCION" +
+                               " FROM TIPOPROD INNER JOIN " +
+                               " PRODUCTO ON TIPOPROD.IDTIPOPROD = PRODUCTO.IDTIPOPROD INNER JOIN " +
+                               " MARCA ON PRODUCTO.IDMARCA = MARCA.IDMARCA ";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
     }
 }

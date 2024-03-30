@@ -26,11 +26,12 @@ namespace SistemasVentas.DAL
                                                           "'Exitoso')";
             conexion.Ejecutar(consulta);
         }
+
         public Venta ObtenerVentaIdDal(int id)
         {
             string consulta = "select * from venta where idventa=" + id;
             DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            Venta v = new Venta();
+            Venta v= new Venta();
             if (tabla.Rows.Count > 0)
             {
                 v.IdVenta = Convert.ToInt32(tabla.Rows[0]["idventa"]);
@@ -57,5 +58,17 @@ namespace SistemasVentas.DAL
             string consulta = "delete from venta where idventa=" + id;
             conexion.Ejecutar(consulta);
         }
+        public DataTable VentaDatosDal()
+        {
+            string consulta = " SELECT CLIENTE.TIPOCLIENTE, USUARIO.NOMBREUSER, VENTA.TOTAL, VENTA.FECHA " +
+                               " FROM VENTA INNER JOIN " +
+                               " CLIENTE ON VENTA.IDCLIENTE = CLIENTE.IDCLIENTE INNER JOIN" +
+                               "  USUARIO ON VENTA.IDVENDEDOR = USUARIO.IDUSUARIO ";
+
+            return conexion.EjecutarDataTabla(consulta, "fsdf");
+
+        }
+
+
     }
 }

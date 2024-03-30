@@ -20,6 +20,7 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarProductoDAL(producto);
         }
+
         public Producto ObtenerProductoIdBss(int id)
         {
             return dal.ObtenerProductoIdDal(id);
@@ -31,6 +32,10 @@ namespace SistemasVentas.BSS
         public void EliminarProductoBss(int id)
         {
             dal.EliminarProductoDal(id);
+        }
+        public DataTable ProductoDatosBss()
+        {
+            return dal.ProductoDatosDal();
         }
     }
 }
