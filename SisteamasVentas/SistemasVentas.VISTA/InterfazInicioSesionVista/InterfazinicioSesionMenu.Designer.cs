@@ -28,151 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfazinicioSesionMenu));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            panel1 = new Panel();
-            label4 = new Label();
-            label3 = new Label();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
-            SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(2, 186);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(799, 212);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(69, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(205, 168);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Text", 26.2499962F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(69, 161);
-            label1.Name = "label1";
-            label1.Size = new Size(182, 50);
-            label1.TabIndex = 5;
-            label1.Text = "SISTEMA";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Text", 26.2499962F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(111, 211);
-            label2.Name = "label2";
-            label2.Size = new Size(163, 50);
-            label2.TabIndex = 6;
-            label2.Text = "VENTAS";
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.LightBlue;
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(339, 25);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(423, 337);
-            panel1.TabIndex = 7;
+            this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(56, 51);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 273);
+            this.panel1.TabIndex = 7;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(25, 109);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 23);
-            label4.TabIndex = 13;
-            label4.Text = "CONTRASEÑA";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(29, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 26);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "CONTRASEÑA";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(25, 30);
-            label3.Name = "label3";
-            label3.Size = new Size(85, 23);
-            label3.TabIndex = 8;
-            label3.Text = "USUARIO";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(50, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 26);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "USUARIO";
             // 
             // button1
             // 
-            button1.BackColor = Color.Azure;
-            button1.DialogResult = DialogResult.OK;
-            button1.Font = new Font("Sitka Text", 11.249999F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(82, 231);
-            button1.Name = "button1";
-            button1.Size = new Size(254, 34);
-            button1.TabIndex = 12;
-            button1.Text = "LOGIN";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(9, 216);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(173, 45);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Iniciar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(25, 149);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(351, 23);
-            textBox2.TabIndex = 11;
-            textBox2.UseSystemPasswordChar = true;
+            this.textBox2.Location = new System.Drawing.Point(18, 168);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(153, 27);
+            this.textBox2.TabIndex = 11;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(25, 67);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(351, 23);
-            textBox1.TabIndex = 9;
+            this.textBox1.Location = new System.Drawing.Point(18, 60);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(153, 27);
+            this.textBox1.TabIndex = 9;
             // 
             // InterfazinicioSesionMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.RoyalBlue;
-            ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Name = "InterfazinicioSesionMenu";
-            Text = "InterfazinicioSesionMenu";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(728, 392);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "InterfazinicioSesionMenu";
+            this.Text = "InterfazinicioSesionMenu";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Label label1;
-        private Label label2;
         private Panel panel1;
         private TextBox textBox2;
         private TextBox textBox1;

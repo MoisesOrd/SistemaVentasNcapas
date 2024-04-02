@@ -53,14 +53,8 @@ namespace SistemasVentas.VISTA.InterfazVendedorVista
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new MenuGerente());
-        }
+       
 
-        private void InterfazVendedorMenu_Load(object sender, EventArgs e)
-        {
-            pictureBox2_Click(null, e);
-        }
+       
     }
 }

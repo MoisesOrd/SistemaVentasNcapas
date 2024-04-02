@@ -79,7 +79,7 @@ namespace SistemasVentas.VISTA.DetalleingVistas
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text) || string.IsNullOrWhiteSpace(textBox5.Text) || string.IsNullOrWhiteSpace(textBox6.Text))
             {
-                MessageBox.Show("Por favor, complete todos los campos.");
+                MessageBox.Show("Complete los datos para mostrar un cambio");
             }
             else
             {

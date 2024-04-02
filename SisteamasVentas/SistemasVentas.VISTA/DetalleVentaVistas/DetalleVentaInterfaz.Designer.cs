@@ -28,300 +28,251 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetalleVentaInterfaz));
-            label2 = new Label();
-            textBox3 = new TextBox();
-            button6 = new Button();
-            button5 = new Button();
-            label9 = new Label();
-            textBox2 = new TextBox();
-            label8 = new Label();
-            textBox1 = new TextBox();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            dataGridView1 = new DataGridView();
-            label1 = new Label();
-            textBox4 = new TextBox();
-            label7 = new Label();
-            textBox5 = new TextBox();
-            panel1 = new Panel();
-            label11 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(10, 201);
-            label2.Name = "label2";
-            label2.Size = new Size(96, 23);
-            label2.TabIndex = 211;
-            label2.Text = "CANTIDAD";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(11, 268);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 26);
+            this.label2.TabIndex = 211;
+            this.label2.Text = "CANTIDAD";
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(120, 201);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(234, 23);
-            textBox3.TabIndex = 210;
+            this.textBox3.Location = new System.Drawing.Point(173, 268);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(324, 27);
+            this.textBox3.TabIndex = 210;
             // 
             // button6
             // 
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.Stretch;
-            button6.Location = new Point(299, 164);
-            button6.Name = "button6";
-            button6.Size = new Size(57, 23);
-            button6.TabIndex = 209;
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.Location = new System.Drawing.Point(361, 220);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(136, 31);
+            this.button6.TabIndex = 209;
+            this.button6.Text = "Seleccionar";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
-            button5.BackgroundImageLayout = ImageLayout.Stretch;
-            button5.Location = new Point(299, 124);
-            button5.Name = "button5";
-            button5.Size = new Size(57, 23);
-            button5.TabIndex = 208;
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.Location = new System.Drawing.Point(361, 163);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(136, 31);
+            this.button5.TabIndex = 208;
+            this.button5.Text = "Seleccionar";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(12, 124);
-            label9.Name = "label9";
-            label9.Size = new Size(89, 23);
-            label9.TabIndex = 207;
-            label9.Text = "ID VENTA";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(14, 165);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(96, 26);
+            this.label9.TabIndex = 207;
+            this.label9.Text = "ID VENTA";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(151, 165);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(142, 23);
-            textBox2.TabIndex = 206;
+            this.textBox2.Location = new System.Drawing.Point(173, 220);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(182, 27);
+            this.textBox2.TabIndex = 206;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(12, 162);
-            label8.Name = "label8";
-            label8.Size = new Size(124, 23);
-            label8.TabIndex = 205;
-            label8.Text = "ID PRODUCTO";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(14, 216);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 26);
+            this.label8.TabIndex = 205;
+            this.label8.Text = "ID PRODUCTO";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(151, 124);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(142, 23);
-            textBox1.TabIndex = 204;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(228, 419);
-            label6.Name = "label6";
-            label6.Size = new Size(94, 23);
-            label6.TabIndex = 203;
-            label6.Text = "ELIMINAR";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(43, 419);
-            label5.Name = "label5";
-            label5.Size = new Size(114, 23);
-            label5.TabIndex = 202;
-            label5.Text = "ACTUALIZAR";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(228, 328);
-            label4.Name = "label4";
-            label4.Size = new Size(81, 23);
-            label4.TabIndex = 201;
-            label4.Text = "LIMPIAR";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(43, 328);
-            label3.Name = "label3";
-            label3.Size = new Size(93, 23);
-            label3.TabIndex = 200;
-            label3.Text = "INSERTAR";
+            this.textBox1.Location = new System.Drawing.Point(173, 165);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(182, 27);
+            this.textBox1.TabIndex = 204;
             // 
             // button3
             // 
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.Location = new Point(70, 367);
-            button3.Name = "button3";
-            button3.Size = new Size(59, 49);
-            button3.TabIndex = 199;
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(11, 421);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(157, 45);
+            this.button3.TabIndex = 199;
+            this.button3.Text = "Insertar";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.BackgroundImageLayout = ImageLayout.Stretch;
-            button4.DialogResult = DialogResult.OK;
-            button4.Location = new Point(234, 458);
-            button4.Name = "button4";
-            button4.Size = new Size(59, 49);
-            button4.TabIndex = 198;
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(336, 421);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(161, 45);
+            this.button4.TabIndex = 198;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.DialogResult = DialogResult.OK;
-            button2.Location = new Point(234, 367);
-            button2.Name = "button2";
-            button2.Size = new Size(59, 49);
-            button2.TabIndex = 197;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(11, 474);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(157, 45);
+            this.button2.TabIndex = 197;
+            this.button2.Text = "Vaciar Casillas";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.DialogResult = DialogResult.OK;
-            button1.Location = new Point(70, 458);
-            button1.Name = "button1";
-            button1.Size = new Size(59, 49);
-            button1.TabIndex = 196;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(11, 527);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 45);
+            this.button1.TabIndex = 196;
+            this.button1.Text = "Actualizar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.BackgroundColor = SystemColors.ActiveCaption;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(360, 106);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(387, 401);
-            dataGridView1.TabIndex = 195;
-            dataGridView1.Click += dataGridView1_Click;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(503, 163);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(675, 409);
+            this.dataGridView1.TabIndex = 195;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(10, 240);
-            label1.Name = "label1";
-            label1.Size = new Size(131, 23);
-            label1.TabIndex = 214;
-            label1.Text = "PRECIO VENTA";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(11, 320);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 26);
+            this.label1.TabIndex = 214;
+            this.label1.Text = "PRECIO VENTA";
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(147, 240);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(207, 23);
-            textBox4.TabIndex = 213;
+            this.textBox4.Location = new System.Drawing.Point(168, 320);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(329, 27);
+            this.textBox4.TabIndex = 213;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Sitka Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(12, 278);
-            label7.Name = "label7";
-            label7.Size = new Size(97, 23);
-            label7.TabIndex = 216;
-            label7.Text = "SUBTOTAL";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(14, 371);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(107, 26);
+            this.label7.TabIndex = 216;
+            this.label7.Text = "SUBTOTAL";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(122, 278);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(234, 23);
-            textBox5.TabIndex = 215;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.LightSkyBlue;
-            panel1.Controls.Add(label11);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(758, 100);
-            panel1.TabIndex = 217;
+            this.textBox5.Location = new System.Drawing.Point(173, 371);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(324, 27);
+            this.textBox5.TabIndex = 215;
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Sitka Text", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = SystemColors.Menu;
-            label11.Location = new Point(33, 20);
-            label11.Name = "label11";
-            label11.Size = new Size(394, 47);
-            label11.TabIndex = 0;
-            label11.Text = "DETALLE DE LA VENTA";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Sitka Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(11, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(486, 58);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "DETALLE DE LA VENTA";
             // 
             // DetalleVentaInterfaz
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightBlue;
-            ClientSize = new Size(759, 519);
-            Controls.Add(panel1);
-            Controls.Add(label7);
-            Controls.Add(textBox5);
-            Controls.Add(label1);
-            Controls.Add(textBox4);
-            Controls.Add(label2);
-            Controls.Add(textBox3);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(label9);
-            Controls.Add(textBox2);
-            Controls.Add(label8);
-            Controls.Add(textBox1);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "DetalleVentaInterfaz";
-            Text = "DetalleVentaInterfaz";
-            Load += DetalleVentaInterfaz_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(1190, 592);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "DetalleVentaInterfaz";
+            this.Text = "DetalleVentaInterfaz";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -334,10 +285,6 @@
         private TextBox textBox2;
         private Label label8;
         private TextBox textBox1;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
         private Button button3;
         private Button button4;
         private Button button2;
@@ -347,7 +294,6 @@
         private TextBox textBox4;
         private Label label7;
         private TextBox textBox5;
-        private Panel panel1;
         private Label label11;
     }
 }

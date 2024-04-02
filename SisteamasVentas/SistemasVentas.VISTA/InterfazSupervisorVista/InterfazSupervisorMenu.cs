@@ -54,14 +54,7 @@ namespace SistemasVentas.VISTA.InterfazSupervisorVista
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new MenuGerente());
-        }
 
-        private void InterfazSupervisorMenu_Load(object sender, EventArgs e)
-        {
-            pictureBox2_Click(null, e);
-        }
+
     }
 }

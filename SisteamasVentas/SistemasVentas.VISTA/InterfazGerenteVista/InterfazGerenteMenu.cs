@@ -29,14 +29,10 @@ namespace SistemasVentas.VISTA.InterfazGerenteVista
         public InterfazGerenteMenu()
         {
             InitializeComponent();
-            // Configuración del tamaño del FlowLayoutPanel
-            flowLayoutPanel1.AutoSize = true; // Para ajustar automáticamente la altura
-            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown; // Configurar los controles para que se coloquen de arriba hacia abajo
-            flowLayoutPanel1.WrapContents = false; // Evitar el salto a una nueva fila
-
-            // Configuración del Panel para desplazamiento automático
-            panel1.AutoScroll = true;
-
+            flowLayoutPanel1.AutoSize = true; 
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown; 
+            flowLayoutPanel1.WrapContents = false; 
+            
         }
         private void AbrirFormHija(Object FormHija)
         {
@@ -131,14 +127,6 @@ namespace SistemasVentas.VISTA.InterfazGerenteVista
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            AbrirFormHija(new MenuGerente());
-        }
-
-        private void InterfazGerenteMenu_Load(object sender, EventArgs e)
-        {
-            pictureBox2_Click(null, e);
-        }
+       
     }
 }
