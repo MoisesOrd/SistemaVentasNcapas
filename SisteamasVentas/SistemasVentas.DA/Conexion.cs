@@ -13,8 +13,7 @@ namespace SistemasVentas.DAL
 
         public static string CONECTAR
         {
-            //PCA-03
-            //DESKTOP-JDKQ9F6\SQLEXPRESS
+            
             get { return @"Data Source=DESKTOP-D4M7M9J; Initial Catalog=TIENDABD; Integrated Security=True; TrustServerCertificate=true;"; }
             //get { return ConfigurationManager.ConnectionStrings["cadena"].ToString(); }
         }
